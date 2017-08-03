@@ -4,16 +4,21 @@ import { HttpModule }    from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { OrganizationComponent } from './organization/organization.component';
+import { RepositoryComponent, SortGridPipe } from './repository/repository.component';
+import { Ng2OrderModule } from 'ng2-order-pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    OrganizationComponent
+    OrganizationComponent,
+    RepositoryComponent,
+    SortGridPipe
   ],
   imports: [
     HttpModule,
-    BrowserModule
+    BrowserModule,
+    Ng2OrderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

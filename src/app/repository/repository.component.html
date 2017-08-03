@@ -1,0 +1,6 @@
+  <ul *ngFor="let repo of repositories | sortgrid: '-created_at'">
+  <li >
+    {{repo.name}} - {{repo.created_at}}
+    
+  </li>
+</ul>

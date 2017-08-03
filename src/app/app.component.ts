@@ -21,6 +21,7 @@ export class AppComponent {
 
   ngOnInit(){
     this.getInfor();
+    this.getRepos();
   }
 
 
@@ -28,5 +29,8 @@ export class AppComponent {
     this.github.getInfo();
   }
 
+  private getRepos(){
+    this.github.getRepos();
+  }
   
 }

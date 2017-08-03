@@ -19,4 +19,14 @@ export class GithubService {
                 });
   }
 
+
+
+  public getRepos(){
+    console.log("!");
+    return this._http.get('https://api.github.com/orgs/fga-gpp-mds/repos')
+      .map((res:Response) => res.json())
+        
+
+  }
+
 }
