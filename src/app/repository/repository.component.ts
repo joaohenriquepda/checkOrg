@@ -8,9 +8,6 @@ import { GithubService } from '../services/github.service';
   styleUrls: ['./repository.component.css']
 })
 
-
-
-
 export class RepositoryComponent implements OnInit {
 
   repositories;
@@ -31,16 +28,13 @@ export class RepositoryComponent implements OnInit {
                         console.log(this.repositories);
                 });
     }
-
 }
-
 
 export class Repository{
   id : number;
   name : string;
   created_at : string;
   updated_at : string;
-
 }
 
 @Pipe({

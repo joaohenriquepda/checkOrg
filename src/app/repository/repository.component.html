@@ -1,6 +1,5 @@
-  <ul *ngFor="let repo of repositories | sortgrid: '-created_at'">
-  <li >
-    {{repo.name}} - {{repo.created_at}}
-    
-  </li>
-</ul>
+
+<md-list *ngFor="let repo of repositories | sortgrid: '-created_at'">
+  <md-list-item><button md-button>{{repo.name}}</button></md-list-item>
+</md-list>
+
